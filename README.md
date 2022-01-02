@@ -1,9 +1,11 @@
 <div id="inicio"></div>
 
-## 📱🖥 Flutter Calc
+## 📱🖥 Flutter Calc - 0.0.1
 
 > Uma calculadora básica desenvolvida com o framework Flutter utilizando o padrão arquitetural MVVM com configurações de tema editaveis.
 Funciona em web, dektop Windows  e dispositivos móveis. 
+
+V
 
 ## 💻 Pré-requisitos
 
