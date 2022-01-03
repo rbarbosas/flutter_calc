@@ -3,14 +3,14 @@ import 'package:flutter_calc/services/shared.localstorage.dart';
 import 'package:flutter_calc/viewmodel/settings.viewmodel.dart';
 
 class AppController {
-  static final AppController instance = AppController._();
+  static final AppController I = AppController._();
   AppController._() {
-    //settingsViewmodel.init();
+    settingsViewmodel.init();
   }
 
   final SettingsViewmodel settingsViewmodel =
       SettingsViewmodel(SharedLocalStorageService());
 
-  bool get isDark => settingsViewmodel.theme.value;
-  ValueNotifier<bool> get theme => settingsViewmodel.theme;
+  bool get isDark => settingsViewmodel.themeMode.value;
+  ValueNotifier<bool> get theme => settingsViewmodel.themeMode;
 }

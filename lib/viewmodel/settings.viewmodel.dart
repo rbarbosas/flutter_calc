@@ -1,28 +1,23 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_calc/services/localstorage.interface.dart';
+import 'package:rx_notifier/rx_notifier.dart';
 
 class SettingsViewmodel {
   final ILocalStorage localStorage;
   SettingsViewmodel(this.localStorage);
-  ValueNotifier<bool> theme = ValueNotifier(false);
+  RxNotifier<bool> themeMode = RxNotifier(false);
 
   Future init() async {
-    await localStorage.get('theme').then((value) {
-      if (value != null) theme = theme;
+    await localStorage.get('themeMode').then((value) {
+      if (value != null) themeMode.value = value;
     });
   }
 
   saveChanges() {
-    localStorage.put('config', theme);
+    localStorage.put('themeMode', themeMode.value);
   }
 
   changeTheme(bool value) {
-    theme.value = value;
+    themeMode.value = value;
     saveChanges();
   }
-
-  // changeLocale(String value) {
-  //   config.locale.value = value;
-  //   saveChanges();
-  // }
 }

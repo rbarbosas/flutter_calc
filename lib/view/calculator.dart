@@ -1,9 +1,13 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_calc/view/widgets/calcButton.widget.dart';
 import 'package:flutter_calc/viewmodel/calculator.viewmodel.dart';
 import 'package:rx_notifier/rx_notifier.dart';
+
+import '../app.controller.dart';
+import 'widgets/themeSwitch.widget.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({Key? key}) : super(key: key);
@@ -18,6 +22,12 @@ class _CalculatorPageState extends State<CalculatorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: [const ThemeSwitchButton()],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
