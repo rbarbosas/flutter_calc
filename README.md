@@ -5,9 +5,7 @@
 > Uma calculadora básica desenvolvida com o framework Flutter utilizando o padrão arquitetural MVVM com configurações de tema editaveis.
 Funciona em web, dektop Windows e dispositivos móveis. 
 
-<img src="https://i.imgur.com/ldVLXrX.jpg" width="250px;" alt="Flutter_calc no modo escuro"/>
-
-<img src="https://i.imgur.com/azeJqfi.jpg" width="250px;" alt="Flutter_calc no modo claro"/><br>
+<img src="https://i.imgur.com/ldVLXrX.jpg" width="250px;" alt="Flutter_calc no modo escuro"/><img src="https://i.imgur.com/azeJqfi.jpg" width="250px;" alt="Flutter_calc no modo claro"/><br>
 
 
 ## 💻 Pré-requisitos
