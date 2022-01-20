@@ -64,4 +64,4 @@ Agradecemos à seguinte pessoa que contribuiu para este projeto:
 </table>
 
 
-[⬆ Voltar ao topo](#-inicio)<br>
+[⬆ Voltar ao topo](#inicio)<br>
